@@ -1,0 +1,397 @@
+/* Regole Generali */
+.testo-centrato {
+  text-align: center;
+}
+
+.titolo-bianco {
+  color: #fff;
+}
+
+.container {
+   margin: 0 auto;
+}
+
+
+/* Header + Navbar */
+
+header {
+  background-color: #fff;
+  width: 100%;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+}
+
+header nav{
+  margin: 0 auto;
+  padding: 1% 0;
+  width: 90%;
+}
+
+nav img{
+  height: 25px;
+}
+
+nav ul{
+  text-align: right;
+  padding-top: 0.5%;
+}
+
+nav li{
+  display: inline-block;
+  padding: 0 1.5%;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 999px) {
+  .burger{
+    position: absolute;
+    top: 46%;
+    right: 5%;
+    transform: translate(-50%, -50%)
+  }
+
+  nav ul{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .burger {
+    display: none;
+  }
+}
+
+/* Sezione Spot */
+.spot {
+  background-image: url("../../img/helbizorig.jpg");
+  background-size: cover, cover;
+  background-position: center;
+}
+
+.spot .col-lg-12 {
+  padding: 40% 0;
+}
+
+.spot h2 {
+  font-size: 45px;
+}
+
+.spot img {
+  padding: 2% 1%;
+}
+
+/* Sezione Bike */
+
+.box-img {
+  background-color: #fafafa;
+  height: auto;
+  padding-top: 7%;
+  margin: 1%;
+}
+
+.bike .col-lg-6 {
+  padding: 3% 0;
+}
+
+.loghi {
+  height: 25px;
+}
+
+.prodotto-img {
+  width: 50%;
+}
+
+.bike h2 {
+  font-weight: lighter;
+  padding: 2% 0;
+}
+
+.bike p{
+  padding-bottom: 1%;
+}
+
+.bike a {
+  color: #0070c8;
+  text-decoration: none;
+}
+
+.bike a:hover{
+  text-decoration: underline;
+}
+
+/* Sezione Work */
+
+.work {
+  width: 100%;
+}
+
+.work .container {
+  position: relative;
+}
+
+.work-bg {
+  background-image: url("../../img/helbiz-work-bg.jpg");
+  background-size: cover;
+  height: 350px;
+}
+
+.iphone img{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.container2 {
+  position: relative;
+}
+
+.none {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+@media screen and (min-width: 768px) {
+  .col_bn{
+    width: 25%;
+    margin: 0 12.5%;
+    padding: 2% 0;
+    float: left;
+  }
+
+  .none{
+    display: none;
+    padding-top: 10%;
+  }
+
+  .work h3{
+  font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .col_bn{
+    display: none;
+  }
+  .iphone img{
+    width: 250px;
+  }
+  .container2{
+    width: 90%;
+    margin: 20% auto 10% auto;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .container2{
+    margin: 30% auto 10% auto;
+    font-size: 1em;
+  }
+  .none{
+    transform: translate(-50%, -130%);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .none{
+    display: none;
+  }
+}
+
+/* Sezione Smart Mobility */
+.smart {
+  background-image: url("../../img/scooter.png");
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  min-height: 550px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.testo-smart {
+  width: 60%;
+  margin: 0 auto;
+  padding: 25% 0;
+}
+
+.testo-smart h3 {
+  font-size: 45px;
+}
+
+/* Sezione App e Find Us*/
+.app-img {
+  background: url("../../img/helbiz-app.png") bottom no-repeat,linear-gradient(#41566a,#252f38) 50% no-repeat;
+}
+
+.findus-img {
+  background: url("../../img/findus.jpg");
+  background-size: cover;
+}
+
+.app a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 1240px) {
+  .app-img.col-lg-6 {
+    width: 49%;
+    margin-right: 1%;
+  }
+
+  .findus.col-lg-6 {
+    width: 49%;
+    margin-right: 1%;
+  }
+
+  .app-img{
+    background-size: 603px,100%;
+  }
+
+  .app-img, .findus-img {
+    min-height: 600px;
+  }
+
+  .app-img h2, .findus-img h2 {
+  padding-top: 7%;
+  font-size: 40px;
+  }
+
+  .app-img p, .findus-img p{
+  padding: 6% 0;
+  font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1239px) {
+  .app-img.col-lg-6 {
+    width: 49%;
+    margin-right: 1%;
+  }
+
+  .findus-img.col.lg-6 {
+    width: 49%;
+    margin-right: 1%;
+  }
+  .app-img{
+    background-size: 300px,auto;
+  }
+
+  .app-img, .findus-img {
+    min-height: 320px;
+  }
+
+  .app-img h2, .findus-img h2{
+  padding-top: 3%;
+  }
+
+  .app-img p, .findus-img p{
+  padding: 3% 0;
+  }
+
+  .app span {
+    margin: 2%;
+  }
+}
+
+/* Sezione Social */
+
+.family {
+  background-image: url("../../img/banner-social.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 400px;
+  margin: 2% 0;
+  position: relative;
+}
+
+.white-block {
+  background-color: white;
+  min-width: 450px;
+  min-height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.social {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8em;
+}
+
+.social a {
+  color: black;
+}
+
+/* Sezione Footer */
+
+#footer {
+  background-color: black;
+  height: auto;
+  padding: 30px 10% 40px;
+  text-align: center;
+}
+
+#footer h2, h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+#footer li {
+  list-style: none;
+  color: white;
+  padding-top: 10px;
+}
+
+#footer a, p, .icone-social {
+  text-decoration: none;
+  color: white;
+}
+
+#footer h2, h3, p, .icone-social {
+  margin-top: 30px;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.hr {
+  margin-top: 20px;
+}
+
+/* @media screen and (min-width: 767px) {
+
+  #footer h2, h3, p {
+    margin-top: 30px;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+
+  #footer h2, h3 {
+    margin-top: 30px;
+  }
+}
+
+
+.icone-footer {
+  margin-top: 30px;
+}
